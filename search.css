@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #775bf1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search ,.search2{
+  width: fit-content;
+  height: fit-content;
+  background: snow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.input , #input2{
+  width: 0;
+  outline-width: 0;
+  border: none;
+  transition: width 0.5s ease;
+  height: 2.2rem;
+
+}
+
+.search > input::placeholder{
+  color: rgb(185, 172, 172);
+  font-size: 1rem;
+  font-weight: bold;
+}
+#btn > .icon{
+  background:snow;
+  display: block;
+ font-weight: bold;
+ font-size: 1.5rem;
+ margin: 3px;
+ cursor: pointer;
+}
+#btn > .icon2{
+  background:snow;
+  display: none;
+ font-weight: bold;
+ font-size: 1.5rem;
+ margin: 3px;
+ cursor: pointer;
+}
+.active{
+  width: 13rem;
+  height: 2.2rem;
+}
+#btn{
+  width: fit-content;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+#input2{
+  background: #775bf1;
+   width: 30px;
+   height: 30px;
+   padding: 2px;
+   border-radius: 20px;
+   border: 3px solid black;
+}
+#input2::placeholder{
+  color: #775bf1;
+}
+.search2{
+  background: none;
+  position: relative;
+  cursor: pointer;
+}
+.line{
+  width: 25px;
+  background: #000;
+  height: 4.5px;
+  position: absolute;
+  bottom: .5px;
+  right: -17px;
+  transform: rotate(30deg);
+  transition: .5s;
+}
+.line1_1{
+  transform: rotate(300deg);
+}
